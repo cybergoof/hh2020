@@ -1,0 +1,853 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Walk through of Holiday Hack 2020">
+      
+      
+      
+        <meta name="author" content="Shaun McCullough">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Shiny Upatree in Castle Approach - Holiday Hack 2020</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../css/pdf.css">
+    
+      <link rel="stylesheet" href="../../css/html.css">
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+      <link rel="stylesheet" href="../../css/jquery.fancybox.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#castle-approach" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Holiday Hack 2020" aria-label="Holiday Hack 2020" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">home</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Holiday Hack 2020
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Shiny Upatree in Castle Approach
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Holiday Hack 2020" class="md-nav__button md-logo">
+      
+        <i class="md-icon">home</i>
+      
+    </a>
+    Holiday Hack 2020
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Elves
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Elves
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../minstix/" title="Pepper Minstix in Castle Approach" class="md-nav__link">
+      Pepper Minstix in Castle Approach
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Shiny Upatree in Castle Approach
+      </label>
+    
+    <a href="./" title="Shiny Upatree in Castle Approach" class="md-nav__link md-nav__link--active">
+      Shiny Upatree in Castle Approach
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shiny-upatree-kringle-kiosk" class="md-nav__link">
+    Shiny Upatree  - Kringle Kiosk
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choice-1-in-the-terminal-map" class="md-nav__link">
+    Choice 1 in the Terminal - Map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choice-3-in-the-terminal-directory" class="md-nav__link">
+    Choice 3 in the Terminal - Directory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choice-4-in-the-terminal-printing" class="md-nav__link">
+    Choice 4 in the Terminal - Printing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mary/" title="Sugarplum Mary in courtyard" class="md-nav__link">
+      Sugarplum Mary in courtyard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bonbowford/" title="Ribb Bonbowford in Dining Room" class="md-nav__link">
+      Ribb Bonbowford in Dining Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../shortstack/" title="Fitz ShortStack in Kitchen" class="md-nav__link">
+      Fitz ShortStack in Kitchen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../evergreen/" title="Holly Evergreen in Kitchen" class="md-nav__link">
+      Holly Evergreen in Kitchen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bushy/" title="Bushy Evergreen in UNPre" class="md-nav__link">
+      Bushy Evergreen in UNPre
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../candysalt/" title="Angel Candysalt in Great Room" class="md-nav__link">
+      Angel Candysalt in Great Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../candycane/index.md" title="Minty Candycane in Workshop" class="md-nav__link">
+      Minty Candycane in Workshop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../coalbox/" title="Tangle Coalbox in Speaker Room" class="md-nav__link">
+      Tangle Coalbox in Speaker Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../openslae/" title="Wunorse Openslae in Netwars Room" class="md-nav__link">
+      Wunorse Openslae in Netwars Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../snowball/" title="Alabaster Snowball in Netwars Room" class="md-nav__link">
+      Alabaster Snowball in Netwars Room
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Objectives
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Objectives
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../objectives/obj1/" title="Objective 1 - Santa's List" class="md-nav__link">
+      Objective 1 - Santa's List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../objectives/obj2/" title="Objective 2 - Investigate S3 Bucket" class="md-nav__link">
+      Objective 2 - Investigate S3 Bucket
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../objectives/obj3/" title="Objective 3 - Point-of-Sale Password Recovery" class="md-nav__link">
+      Objective 3 - Point-of-Sale Password Recovery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../objectives/obj4/" title="Objective 4 - Elevator" class="md-nav__link">
+      Objective 4 - Elevator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../objectives/obj5/" title="Objective 5 - HID" class="md-nav__link">
+      Objective 5 - HID
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../objectives/obj6/" title="Objective 6 - Splunk Challenge" class="md-nav__link">
+      Objective 6 - Splunk Challenge
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../objectives/obj7/" title="Objective 7 - CAN-Bus" class="md-nav__link">
+      Objective 7 - CAN-Bus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../objectives/obj8/" title="Objective 8 - Tag Generator" class="md-nav__link">
+      Objective 8 - Tag Generator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../objectives/obj9/" title="Objective 9 - ARP Shenanigans" class="md-nav__link">
+      Objective 9 - ARP Shenanigans
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../objectives/obj10/" title="Objective 10 - Bypass Fingerprint" class="md-nav__link">
+      Objective 10 - Bypass Fingerprint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../objectives/obj11a/" title="Objective 11.a - BlockChain" class="md-nav__link">
+      Objective 11.a - BlockChain
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shiny-upatree-kringle-kiosk" class="md-nav__link">
+    Shiny Upatree  - Kringle Kiosk
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choice-1-in-the-terminal-map" class="md-nav__link">
+    Choice 1 in the Terminal - Map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choice-3-in-the-terminal-directory" class="md-nav__link">
+    Choice 3 in the Terminal - Directory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choice-4-in-the-terminal-printing" class="md-nav__link">
+    Choice 4 in the Terminal - Printing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="castle-approach">Castle Approach</h1>
+<h2 id="shiny-upatree-kringle-kiosk">Shiny Upatree  - Kringle Kiosk</h2>
+<p><img alt="Room" src="img/room.png" /></p>
+<div class="admonition question">
+<p class="admonition-title">Challenge</p>
+<p>Hiya hiya - I'm Shinny Upatree!</p>
+<p>Check out this cool KringleCon kiosk!</p>
+<p>You can get a map of the castle, learn about where the elves are, and get your own badge printed right on-screen!</p>
+<p>Be careful with that last one though. I heard someone say it's "ingestible." Or something...</p>
+<p>Do you think you could check and see if there is an issue?</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>In the hint, there is a link to command injection techniques from <a href="https://owasp.org/www-community/attacks/Command_Injection">OWASP</a></p>
+</div>
+<p>The terminal has a set of commands.  The hint pointed at the 4<sup>th</sup> one, which is a problem.</p>
+<div class="codehilite"><pre><span></span><code>```bash
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Welcome to the North Pole!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. Map
+2. Code of Conduct and Terms of Use
+3. Directory
+4. Print Name Badge
+5. Exit
+Please select an item from the menu by entering a single number.
+Anything else might have ... unintended consequences.
+Enter choice [1 - 5] 
+```
+</code></pre></div>
+
+<h3 id="choice-1-in-the-terminal-map">Choice 1 in the Terminal - Map</h3>
+<p><img alt="Choice 1" src="img/1.png" /></p>
+<h3 id="choice-3-in-the-terminal-directory">Choice 3 in the Terminal - Directory</h3>
+<p><img alt="Choice 1" src="img/3.png" /></p>
+<h3 id="choice-4-in-the-terminal-printing">Choice 4 in the Terminal - Printing</h3>
+<p>In this command, you print out a command.  I ented "&gt;" and got this message</p>
+<div class="codehilite"><pre><span></span><code>```bash
+Enter your name (Please avoid special characters, they cause some weird errors)...&gt;
+bash: -c: line 0: syntax error near unexpected token `newline&#39;
+bash: -c: line 0: `/usr/games/cowsay -f /opt/reindeer.cow &gt;&#39;
+```
+</code></pre></div>
+
+<p>The program will also cause "Error" if you enter an invalid number</p>
+<p>I believe I have to enter a newline and then run a command.</p>
+<p>I found that I could enter (4), to enter a name.  And, I could append a command to be executed by entering a name like <code>hacked &amp;&amp; echo hacked</code></p>
+<p>I had forgotten the intension of the terminal, so I used <code>hacked &amp;&amp; echo welcome.sh</code> to get the entire shell script as shown <a href="welcome.sh">welcome.sh</a></p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>I found that the goal was to escape the menu, so I ran <code>hacked &amp;&amp; /bin/bash</code></p>
+<div class="codehilite"><pre><span></span><code>  ________
+  &lt; hacked &gt;
+  --------
+    <span class="se">\</span>
+    <span class="se">\ </span>  <span class="se">\_\_</span>    _/_/
+      <span class="se">\ </span>     <span class="se">\_</span>_/
+            <span class="o">(</span>oo<span class="o">)</span><span class="se">\_</span>______
+            <span class="o">(</span>__<span class="o">)</span><span class="se">\ </span>      <span class="o">)</span><span class="se">\/\</span>
+                <span class="o">||</span>----w <span class="p">|</span>
+                <span class="o">||</span>     <span class="o">||</span>
+    ___                                                      _    
+    / __<span class="p">|</span>   _  _     __      __      ___     ___     ___     <span class="p">|</span> <span class="p">|</span>   
+    <span class="se">\_</span>_ <span class="se">\ </span> <span class="p">|</span> +<span class="p">|</span> <span class="p">|</span>   / _<span class="p">|</span>    / _<span class="p">|</span>    / -_<span class="o">)</span>   <span class="o">(</span>_-&lt;    <span class="o">(</span>_-&lt;     <span class="p">|</span>_<span class="p">|</span>   
+    <span class="p">|</span>___/   <span class="se">\_</span>,_<span class="p">|</span>   <span class="se">\_</span>_<span class="p">|</span>_   <span class="se">\_</span>_<span class="p">|</span>_   <span class="se">\_</span>__<span class="p">|</span>   /__/_   /__/_   _<span class="o">(</span>_<span class="o">)</span>_  
+  _<span class="p">|</span><span class="s2">&quot;&quot;&quot;&quot;&quot;|_|&quot;&quot;&quot;&quot;&quot;</span><span class="p">|</span>_<span class="p">|</span><span class="s2">&quot;&quot;&quot;&quot;&quot;|_|&quot;&quot;&quot;&quot;&quot;</span><span class="p">|</span>_<span class="p">|</span><span class="s2">&quot;&quot;&quot;&quot;&quot;|_|&quot;&quot;&quot;&quot;&quot;</span><span class="p">|</span>_<span class="p">|</span><span class="s2">&quot;&quot;&quot;&quot;&quot;|_| &quot;&quot;&quot;</span> <span class="p">|</span> 
+  <span class="s2">&quot;`-0-0-&#39;&quot;</span><span class="sb">`</span>-0-0-<span class="s1">&#39;&quot;`-0-0-&#39;</span><span class="s2">&quot;`-0-0-&#39;&quot;</span><span class="sb">`</span>-0-0-<span class="s1">&#39;&quot;`-0-0-&#39;</span><span class="s2">&quot;`-0-0-&#39;&quot;</span><span class="sb">`</span>-0-0-<span class="err">&#39;</span>     
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Shinny's Response</p>
+<p>Golly - wow! You sure found the flaw for us!</p>
+<p>Say, we've been having an issue with an Amazon S3 bucket.</p>
+<p>Do you think you could help find Santa's package file?</p>
+<p>Jeepers, it seems there's always a leaky bucket in the news. You'd think we could find our own files!</p>
+<p>Digininja has a great guide, if you're new to S3 searching.</p>
+<p>He even released a tool for the task - what a guy!</p>
+<p>The package wrapper Santa used is reversible, but it may take you some trying.</p>
+<p>Good luck, and thanks for pitching in!</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Jason is HERE</p>
+<p>Hitting the nail on the scaffolding gives a message:
+Job Hunting? Feeling Stuck?</p>
+<p>Join me for an interactive job hunting livestream!</p>
+<p>Any industry.</p>
+<p>Any type of job.</p>
+<p>No vendor pitches.</p>
+<p>Not selling anything.</p>
+<p>Just helping.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Jason is in the Matrix</p>
+<p>On this terminal, in the <code>/opt</code> directory, there is a file called <code>plant.txt</code>.  The contents say:
+<div class="codehilite"><pre><span></span><code>Hi, my name is Jason the Plant!
+
+<span class="o">(</span> U
+<span class="se">\|</span> <span class="o">)</span>
+__<span class="p">|</span>/
+<span class="se">\ </span>   /
+<span class="se">\_</span>_/ ejm96
+</code></pre></div></p>
+<p>Jason is getting further and further pulled into the Santa Matrix.  Eventually, he will completely take over KringleKon like in Tron.</p>
+</div>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../minstix/" title="Pepper Minstix in Castle Approach" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Pepper Minstix in Castle Approach
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../mary/" title="Sugarplum Mary in courtyard" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Sugarplum Mary in courtyard
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            ©2021 Shaun McCullough
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../js/jquery-3.4.1.min.js"></script>
+      
+        <script src="../../js/jquery.fancybox.min.js"></script>
+      
+        <script src="../../js/workbook.js"></script>
+      
+        <script src="../../js/custom.js"></script>
+      
+    
+  </body>
+</html>

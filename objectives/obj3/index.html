@@ -1,0 +1,726 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Walk through of Holiday Hack 2020">
+      
+      
+      
+        <meta name="author" content="Shaun McCullough">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Objective 3 - Point-of-Sale Password Recovery - Holiday Hack 2020</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#2196f3">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../css/pdf.css">
+    
+      <link rel="stylesheet" href="../../css/html.css">
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+      <link rel="stylesheet" href="../../css/jquery.fancybox.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#courtyard" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Holiday Hack 2020" aria-label="Holiday Hack 2020" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">home</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Holiday Hack 2020
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Objective 3 - Point-of-Sale Password Recovery
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Holiday Hack 2020" class="md-nav__button md-logo">
+      
+        <i class="md-icon">home</i>
+      
+    </a>
+    Holiday Hack 2020
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Elves
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Elves
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../elves/minstix/" title="Pepper Minstix in Castle Approach" class="md-nav__link">
+      Pepper Minstix in Castle Approach
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../elves/upatree/" title="Shiny Upatree in Castle Approach" class="md-nav__link">
+      Shiny Upatree in Castle Approach
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../elves/mary/" title="Sugarplum Mary in courtyard" class="md-nav__link">
+      Sugarplum Mary in courtyard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../elves/bonbowford/" title="Ribb Bonbowford in Dining Room" class="md-nav__link">
+      Ribb Bonbowford in Dining Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../elves/shortstack/" title="Fitz ShortStack in Kitchen" class="md-nav__link">
+      Fitz ShortStack in Kitchen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../elves/evergreen/" title="Holly Evergreen in Kitchen" class="md-nav__link">
+      Holly Evergreen in Kitchen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../elves/bushy/" title="Bushy Evergreen in UNPre" class="md-nav__link">
+      Bushy Evergreen in UNPre
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../elves/candysalt/" title="Angel Candysalt in Great Room" class="md-nav__link">
+      Angel Candysalt in Great Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../elves/candycane/index.md" title="Minty Candycane in Workshop" class="md-nav__link">
+      Minty Candycane in Workshop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../elves/coalbox/" title="Tangle Coalbox in Speaker Room" class="md-nav__link">
+      Tangle Coalbox in Speaker Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../elves/openslae/" title="Wunorse Openslae in Netwars Room" class="md-nav__link">
+      Wunorse Openslae in Netwars Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../elves/snowball/" title="Alabaster Snowball in Netwars Room" class="md-nav__link">
+      Alabaster Snowball in Netwars Room
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Objectives
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Objectives
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../obj1/" title="Objective 1 - Santa's List" class="md-nav__link">
+      Objective 1 - Santa's List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../obj2/" title="Objective 2 - Investigate S3 Bucket" class="md-nav__link">
+      Objective 2 - Investigate S3 Bucket
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Objective 3 - Point-of-Sale Password Recovery
+      </label>
+    
+    <a href="./" title="Objective 3 - Point-of-Sale Password Recovery" class="md-nav__link md-nav__link--active">
+      Objective 3 - Point-of-Sale Password Recovery
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sugarplum-mary-point-of-sale-password-recovery" class="md-nav__link">
+    Sugarplum Mary  - Point-of-Sale Password Recovery
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../obj4/" title="Objective 4 - Elevator" class="md-nav__link">
+      Objective 4 - Elevator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../obj5/" title="Objective 5 - HID" class="md-nav__link">
+      Objective 5 - HID
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../obj6/" title="Objective 6 - Splunk Challenge" class="md-nav__link">
+      Objective 6 - Splunk Challenge
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../obj7/" title="Objective 7 - CAN-Bus" class="md-nav__link">
+      Objective 7 - CAN-Bus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../obj8/" title="Objective 8 - Tag Generator" class="md-nav__link">
+      Objective 8 - Tag Generator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../obj9/" title="Objective 9 - ARP Shenanigans" class="md-nav__link">
+      Objective 9 - ARP Shenanigans
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../obj10/" title="Objective 10 - Bypass Fingerprint" class="md-nav__link">
+      Objective 10 - Bypass Fingerprint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../obj11a/" title="Objective 11.a - BlockChain" class="md-nav__link">
+      Objective 11.a - BlockChain
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sugarplum-mary-point-of-sale-password-recovery" class="md-nav__link">
+    Sugarplum Mary  - Point-of-Sale Password Recovery
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="courtyard">Courtyard</h1>
+<h2 id="sugarplum-mary-point-of-sale-password-recovery">Sugarplum Mary  - Point-of-Sale Password Recovery</h2>
+<p><img alt="Objective" src="img/objective.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Terminal</p>
+<p>Hey, wouldja' mind helping me get into my point-of-sale terminal?</p>
+<p>It's down, and we kinda' need it running.</p>
+<p>Problem is: it is asking for a password. I never set one!</p>
+<p>Can you help me figure out what it is so I can get set up?</p>
+<p>Shinny says this might be an Electron application.</p>
+<p>I hear there's a way to extract an ASAR file from the binary, but I haven't looked into it yet.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>There are <a href="https://www.npmjs.com/package/asar">tools</a> and <a href="https://medium.com/how-to-electron/how-to-get-source-code-of-any-electron-application-cbb5c7726c37">guides</a> explaining how to extract ASAR from Electron apps.</p>
+<p>It's possible to extract the source code from an <a href="https://www.electronjs.org/">Electron app</a>.</p>
+</div>
+<p>When trying to open the terminal, it says the termianl is locked and you can download an <a href="https://download.holidayhackchallenge.com/2020/santa-shop/santa-shop.exe">offline version</a> to inspect at</p>
+<p><img alt="locked" src="img/locked.png" /></p>
+<p>Running the santa-shop.exe, it installed the application in <code>C:\Users\cyber\AppData\Local\Programs</code></p>
+<p><img alt="dir" src="img/dirlist.png" /></p>
+<p>I installed npm's asar as recommended in the <a href="https://medium.com/how-to-electron/how-to-get-source-code-of-any-electron-application-cbb5c7726c37">Medium</a> hint above and extracted the source code.</p>
+<p><code>npx asar extract app.asar santa-source/</code></p>
+<p>A simple text search in the directory showed the password as <code>santapass</code></p>
+<p><img alt="password" src="img/password.png" /></p>
+<p>Entering the password brings me to a Point of Sale terminal</p>
+<p><img alt="pos" src="img/pos.png" /></p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>santapass</p>
+</div>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../obj2/" title="Objective 2 - Investigate S3 Bucket" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Objective 2 - Investigate S3 Bucket
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../obj4/" title="Objective 4 - Elevator" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Objective 4 - Elevator
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            ©2021 Shaun McCullough
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../js/jquery-3.4.1.min.js"></script>
+      
+        <script src="../../js/jquery.fancybox.min.js"></script>
+      
+        <script src="../../js/workbook.js"></script>
+      
+        <script src="../../js/custom.js"></script>
+      
+    
+  </body>
+</html>

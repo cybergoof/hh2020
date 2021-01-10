@@ -1,0 +1,20 @@
+@media print {
+    html {
+        font-size: 14px;
+    }
+
+    .md-container,
+    .md-main__inner,
+    .md-grid {
+        padding-top: 0rem;
+    }
+
+    @page {
+        size: letter portrait;
+        margin: 25mm 10mm 25mm 10mm;
+        counter-increment: page;
+        font-family: "Calibri","Helvetica Neue",Helvetica,Arial,sans-serif;
+        white-space: pre;
+        color: black;
+    }
+}
